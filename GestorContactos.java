@@ -12,7 +12,7 @@ public class GestorContactos {
        public GestorContactos() {
            contactos = new ArrayList<>();
        } 
-       /**
+       /** 
         * Agrega un nuevo contacto a la lista.
         * 
         * @param contacto El contacto a agregar.
