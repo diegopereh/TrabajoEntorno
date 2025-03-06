@@ -15,7 +15,7 @@ public class main {
        Scanner sc = new Scanner(System.in);
        GestorContactos gestor = new GestorContactos(); // Gestor que maneja los contactos
        while (true) {
-           // Menú de opciones para el usuario
+           // Menú de opciones para el usuario 
            System.out.println("╔═════════════════════════╗");
            System.out.println("║   Gestor de Contactos   ║");
            System.out.println("╚═════════════════════════╝");
