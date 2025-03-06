@@ -27,13 +27,14 @@ public class GestorContactos {
         */
      
        public void editarContacto(String telefono) {
-            Scanner scanner = new Scanner(System.in);
-            Contacto contacto = buscarContactoPorTelefono(telefono);
+            Scanner scanner = new Scanner(System.in); //Creacion Scanner
+            Contacto contacto = buscarContactoPorTelefono(telefono); // 
            
           
   if (contacto != null) {
                 System.out.println("Contacto encontrado: " +   contacto.getNombre());
-               
+      
+               // En caso de encontrar contacto, actualizamos datos.
                 actualizarNombre(contacto, scanner);
                 actualizarTelefono(contacto, scanner);
                 actualizarDireccion(contacto, scanner);
@@ -44,6 +45,7 @@ public class GestorContactos {
        }
      
        private void actualizarNombre(Contacto contacto, Scanner scanner) {
+          //Actualizamos el parametro nombre.
            System.out.println("Nuevo nombre: ");
            String nuevoNombre = scanner.nextLine().trim();   
            if(!nuevoNombre.isEmpty()) {
@@ -52,6 +54,7 @@ public class GestorContactos {
        }
      
        private void actualizarTelefono(Contacto contacto, Scanner scanner) {
+          //Actualizamos el parametro telefono.
            System.out.println("Nuevo telefono: ");
            String nuevoTelefono = scanner.nextLine().trim();     
            if(!nuevoTelefono.isEmpty()) {
@@ -60,6 +63,7 @@ public class GestorContactos {
        }
      
        private void actualizarDireccion(Contacto contacto, Scanner scanner) {
+         //Actualizamos los parametros de direccion.
            System.out.println("Nueva ciudad: ");
            String nuevaCiudad = scanner.nextLine().trim();   
          
