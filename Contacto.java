@@ -15,7 +15,7 @@ public class Contacto {
         * @param telefono Teléfono del contacto.
         */
        public Contacto(Direccion direccion, String nombre, String telefono) {
-           this.direccion = direccion;
+           this.direccion = direccion; 
            this.nombre = nombre;
            this.telefono = telefono;
        }
